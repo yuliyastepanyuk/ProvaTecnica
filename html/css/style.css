@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    max-width: 90%;
+    margin: 20px 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="date"],
+form input[type="time"],
+form select,
+form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.checkbox-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+form button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+textarea {
+    resize: vertical; /*ingrandisce textarea a seconda la larghezza del contenuto in verticale*/
+}                     /*si potrebbe mettere lo scroll*/
+
+.form-group-dynamic {
+    border: 1px dashed #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.dirigente-item {
+    background-color: #e9e9e9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dirigente-item span {
+    flex-grow: 1;
+}
+
+.dirigente-item button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+    width: auto; /* sovrascrive la regola generale per i bottoni */
+}
+
+.dirigente-item button:hover {
+    background-color: #c82333;
+}
+
+.dirigente-input-group {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.dirigente-input-group h3 {
+    margin-top: 0;
+    color: #444;
+    font-size: 1.1em;
+}
+
+.dirigente-input-group input[type="text"] {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- obbligatorio per avere unlayoutresponsive, ma in questo caso non è necessario -->
+    <title>Landing Page Lezioni</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- link al file CSS -->
+</head>
+
+<body>
+    <div class="container">
+        <h1>Modulo Lezioni</h1>
+        <form id="lessonForm"> <!-- uso il tag form -->
+            <label for="azione">Azione:</label> <!-- campo azione -->
+            <select id="azione" name="azione" required>
+                <option value="">Seleziona un'azione</option>
+                <option value="Aggiungi Lezione">Aggiungi Lezione</option>
+                <option value="Elimina Lezione">Elimina Lezione</option>
+                <option value="Modifica Lezione">Modifica Lezione</option>
+            </select>
+
+            <label for="utente">Utente:</label> <!-- campo utente -->
+            <select id="utente" name="utente" required>
+                <option value="">Seleziona un utente</option>
+                <option value="Mirko">Mirko</option>
+                <option value="Luigi">Luigi</option>
+                <option value="Stefano">Stefano</option>
+            </select>
+
+            <label for="azienda">Azienda:</label> <!-- campo azienda -->
+            <input type="text" id="azienda" name="azienda" required>
+
+            <label for="protocollo">Protocollo:</label> <!-- campo protocollo -->
+            <input type="text" id="protocollo" name="protocollo" required>
+
+            <label for="nomeProgetto">Nome Progetto:</label> <!-- campo nome progetto -->
+            <input type="text" id="nomeProgetto" name="nomeProgetto" required>
+
+            <label for="modulo">Modulo:</label> <!-- campo modulo -->
+            <input type="text" id="modulo" name="modulo" required>
+
+            <label for="numeroEdizione">Numero Edizione:</label> <!-- campo numero edizione -->
+            <input type="number" id="numeroEdizione" name="numeroEdizione" required>
+
+            <div class="checkbox-group"> <!-- campo avviso -->
+                <input type="checkbox" id="avviso" name="avviso">
+                <label for="avviso">Avviso</label>
+            </div>
+
+            <div class="checkbox-group"> <!-- campo individuale -->
+                <input type="checkbox" id="individuale" name="individuale">
+                <label for="individuale">Individuale</label>
+            </div>
+
+            <label>Dirigenti:</label> <!-- campo dirigenti -->
+            <div id="dirigentiContainer" class="form-group-dynamic">
+            </div>
+
+            <div class="dirigente-input-group">
+                <h3>Aggiungi un nuovo Dirigente:</h3>
+                <input type="text" id="dirigenteNome" placeholder="Nome Dirigente">
+                <input type="text" id="dirigenteCognome" placeholder="Cognome Dirigente">
+                <input type="text" id="dirigenteCF" placeholder="Codice Fiscale Dirigente">
+                <button type="button" id="addDirigenteBtn">Aggiungi Dirigente</button>
+            </div>
+
+            <label for="modalita">Modalità:</label> <!-- campo modalità -->
+            <select id="modalita" name="modalita" required>
+                <option value="">Seleziona una modalità</option>
+                <option value="Aula">Aula</option>
+                <option value="Remoto">Remoto</option>
+            </select>
+
+            <label for="piattaforma" id="labelPiattaforma" style="display: none;">Piattaforma (obbligatorio se
+                Remoto):</label>
+            <input type="text" id="piattaforma" name="piattaforma" style="display: none;"> <!-- campo piattaforma, default
+            nascosto -->
+
+            <label for="data">Data:</label> <!-- campo data -->
+            <input type="date" id="data" name="data" required>
+
+            <label for="oraInizio">Ora Inizio:</label> <!-- campo ora inizio -->
+            <input type="time" id="oraInizio" name="oraInizio" required>
+
+            <label for="oraFine">Ora Fine:</label> <!-- campo ora fine -->
+            <input type="time" id="oraFine" name="oraFine" required>
+
+            <label for="oraInizioPausa">Ora Inizio Pausa (opzionale):</label> <!-- campo ora inizio pausa -->
+            <input type="time" id="oraInizioPausa" name="oraInizioPausa">
+
+            <label for="oraFinePausa">Ora Fine Pausa (opzionale):</label> <!-- campo ora fine pausa -->
+            <input type="time" id="oraFinePausa" name="oraFinePausa">
+
+            <label for="note">Note (opzionale):</label> <!-- campo note -->
+            <textarea id="note" name="note" rows="3"></textarea>
+
+            <label for="sede">Sede:</label> <!-- campo sede -->
+            <input type="text" id="sede" name="sede" required>
+
+            <label for="docenteCF">Docente CF:</label> <!-- campo docente CF -->
+            <input type="text" id="docenteCF" name="docenteCF" required>
+
+            <button type="submit">Invia Dati</button>
+        </form>
+    </div>
+
+    <script src="js/script.js"></script> <!-- link al file JavaScript -->
+</body>
+
+</html>
