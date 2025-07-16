@@ -145,7 +145,7 @@ CREATE TABLE IF NOT EXISTS lezioni (
     numeroEdizione INT,
     avviso BOOLEAN,
     individuale BOOLEAN,
-    dirigenti TEXT, -- Campo TEXT per l'array JSON dei dirigenti
+    dirigenti TEXT, 
     modalita VARCHAR(50),
     piattaforma VARCHAR(50),
     data DATE,
