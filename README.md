@@ -67,7 +67,7 @@ Questo progetto è una mini-applicazione web che include una landing page front-
 │   │   └── style.css             # Stili CSS
 │   └── js/
 │       └── script.js             # Logica JavaScript per il form e i dirigenti dinamici
-└── .env                          # Variabili d'ambiente per il database (NON committare dati sensibili!)
+└── .env                          # Variabili d'ambiente per il database 
 ```
 
 ---
