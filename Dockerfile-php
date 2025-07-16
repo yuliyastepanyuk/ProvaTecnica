@@ -1,0 +1,11 @@
+FROM php:8.2-apache
+
+# Installa le dipendenze per mysqli e pdo_mysql
+RUN docker-php-ext-install mysqli pdo pdo_mysql
+
+# Configura il display degli errori di PHP
+RUN echo "display_errors = On" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
+    && echo "display_startup_errors = On" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
+    && echo "error_reporting = E_ALL" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+
+WORKDIR /var/www/html
